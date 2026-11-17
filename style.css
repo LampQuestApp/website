@@ -177,3 +177,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline
   .site-nav { gap: 14px; }
   .site-nav .hide-sm { display: none; }
 }
+
+/* YouTube links */
+.yt-icon { width: 24px; height: 17px; flex-shrink: 0; display: block; }
+.site-nav a.nav-yt { display: inline-flex; align-items: center; gap: 8px; }

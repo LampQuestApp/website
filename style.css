@@ -181,3 +181,61 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline
 /* YouTube links */
 .yt-icon { width: 24px; height: 17px; flex-shrink: 0; display: block; }
 .site-nav a.nav-yt { display: inline-flex; align-items: center; gap: 8px; }
+
+/* Launch announcement bar */
+.launch-bar {
+  background: var(--gold); color: var(--midnight);
+  text-align: center; font-family: var(--round); font-weight: 700;
+  font-size: 1rem; line-height: 1.35; padding: 10px 16px;
+}
+.launch-bar strong { font-weight: 800; white-space: nowrap; }
+.launch-tag {
+  display: inline-block; margin-right: 8px; padding: 2px 10px; border-radius: 999px;
+  background: var(--midnight); color: var(--gold); font-weight: 800;
+  font-size: .85rem; letter-spacing: .04em; text-transform: uppercase; vertical-align: 1px;
+}
+.soon { color: var(--gold-light); font-weight: 600; }
+.soon strong { white-space: nowrap; }
+
+/* Phones */
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .launch-bar { font-size: .92rem; padding: 9px 14px; }
+  .launch-tag { display: table; margin: 0 auto 4px; }
+
+  .site-header .wrap { flex-direction: column; gap: 10px; padding: 14px 0 12px; }
+  .brand { white-space: nowrap; }
+  .brand img { width: 34px; height: 34px; }
+  .brand span { font-size: 1.2rem; }
+  .site-nav { width: 100%; justify-content: center; gap: 22px; }
+  .site-nav a { font-size: .95rem; padding: 6px 0; }
+
+  .hero { padding: 28px 0 52px; }
+  .hero .wrap { gap: 18px; }
+  .hero-art img { width: 112px; height: auto; }
+  .eyebrow { margin-bottom: 10px; font-size: .78rem; }
+  h1 { font-size: 2.05rem; }
+  h2 { font-size: 1.6rem; }
+  .hero p.lead { font-size: 1.06rem; }
+  .cta-row { flex-direction: column; align-items: stretch; gap: 12px; margin-top: 22px; }
+  .btn { justify-content: center; padding: 14px 20px; }
+  .soon { text-align: center; }
+
+  section { padding: 48px 0; }
+  .section-head { margin-bottom: 28px; }
+  .section-head p { font-size: 1.02rem; }
+  .card { padding: 22px; }
+  .step { padding-top: 64px; }
+  .step::before { top: 20px; left: 22px; }
+  .verse-band { padding: 48px 0; }
+  .note { padding: 16px 18px; }
+
+  .page-hero { padding: 36px 0 32px; }
+  .doc { padding: 36px 0 56px; }
+  .doc .summary { padding: 20px; }
+
+  .site-footer { text-align: center; padding: 32px 0; }
+  .site-footer .wrap { flex-direction: column; justify-content: center; }
+  .site-footer nav { justify-content: center; gap: 12px 18px; }
+  .site-footer a { overflow-wrap: anywhere; }
+}

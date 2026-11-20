@@ -239,3 +239,22 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline
   .site-footer nav { justify-content: center; gap: 12px 18px; }
   .site-footer a { overflow-wrap: anywhere; }
 }
+
+/* Demo video */
+.demo { padding-bottom: 72px; }
+.demo-frame {
+  max-width: 960px; margin: 0 auto; aspect-ratio: 16 / 9;
+  border-radius: var(--radius); overflow: hidden;
+  background: var(--midnight) url("video/demo-16x9-poster.jpg") center / cover no-repeat;
+  box-shadow: 0 24px 60px rgba(19,32,59,.28), 0 0 0 1px rgba(19,32,59,.08);
+}
+.demo-video { display: block; width: 100%; height: 100%; object-fit: cover; background: transparent; }
+.demo-caption { text-align: center; color: var(--ink-soft); font-size: .92rem; margin: 14px 0 0; }
+
+@media (max-width: 600px) {
+  .demo { padding-bottom: 40px; }
+  .demo-frame {
+    aspect-ratio: 9 / 16; width: min(100%, calc(78vh * 9 / 16));
+    background-image: url("video/demo-9x16-poster.jpg");
+  }
+}

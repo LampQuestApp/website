@@ -163,6 +163,9 @@ details p, details ol { margin: 12px 0 0; color: var(--ink-soft); }
 .site-footer nav { display: flex; gap: 20px; flex-wrap: wrap; }
 .site-footer a { text-decoration: none; }
 .site-footer a:hover { color: var(--gold-light); }
+.site-footer .legal { display: block; margin-top: 18px; }
+.site-footer .legal p { margin: 0; font-size: .8rem; line-height: 1.5; opacity: .75; }
+.tm { font-size: .5em; vertical-align: super; line-height: 0; margin-left: 1px; font-weight: 700; }
 
 a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 6px; }
 
